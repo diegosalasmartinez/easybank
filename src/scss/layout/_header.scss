@@ -1,0 +1,98 @@
+.logo{
+    a{
+        img{
+            width: auto;
+            height: 2rem;
+            
+            @include desktop{
+                height: 2.5rem;
+            }
+        }
+    }
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.75rem 0 2rem 0;
+
+    .request-invite{
+        background: linear-gradient(90deg, $verdeLimon 0%, $celeste 100%);
+        border-radius: 25px;
+        padding: 1rem 3.5rem;
+        color: $blanco;
+        font-size: 1.4rem;
+        display: none;
+        transition: filter 150ms ease-in-out;
+        
+        @include desktop{
+            display: flex;
+        } 
+
+        &:hover{
+            filter: opacity(45%);
+        }
+    }
+    
+    .menu-hamburguesa{
+
+        @include desktop{
+            display: none;
+        } 
+        
+        span{
+            display: block;
+            height: 0.20rem;
+            width: 2.75rem;
+            background-color: $azulOscuro;
+            margin-bottom: 0.4rem;
+            
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.navegacion{
+    display: none;
+
+    @include desktop{
+        display: flex;
+    } 
+
+    nav{
+        display: flex;
+        gap: 3rem;
+
+        a{
+            color: $grisOscuro;            
+            text-decoration: none;
+            font-size: 1.4rem;
+            text-align: center;
+            transition: color 150ms ease-in-out;
+            position: relative;
+            
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: .35rem;
+                background: linear-gradient(90deg, $verdeLimon 0%, $celeste 100%);
+                bottom: -3rem;
+                opacity: 0;
+                transition: opacity 150ms ease-in-out;
+            }
+            
+            &:hover{
+                color: $azulOscuro;
+                
+                &::before{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -7,7 +7,7 @@ html {
 }
 body {
     font-family: $fuente_principal;
-    font-size: 1.6rem;
+    font-size: $tamanoFuente;
     line-height: 1.8;
 }
 p {
@@ -15,8 +15,8 @@ p {
     font-size: 2rem;
 }
 .contenedor {
-    width: 95%;
-    max-width: 120rem;
+    width: 80%;
+    max-width: 110rem;
     margin: 0 auto;
 }
 

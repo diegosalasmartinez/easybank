@@ -1,0 +1,34 @@
+.menu-hamburguer{
+    @include tablet{
+        display: none;
+    } 
+    
+    span{
+        display: block;
+        height: 0.20rem;
+        width: 2.75rem;
+        background-color: $azulOscuro;
+        transform-origin: 5.5px 1.8px;
+        transition: transform 300ms ease-in-out;
+        
+        &:not(:last-of-type){
+            margin-bottom: 0.4rem;
+        }
+    }
+}
+
+.header{
+    &.menu-on{
+        span{
+            &:first-of-type{
+                transform: rotate(45deg);
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:last-of-type{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

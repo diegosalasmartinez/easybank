@@ -9,6 +9,9 @@ body {
     font-family: $fuente_principal;
     font-size: $tamanoFuente;
     line-height: 1.8;
+    &.noscroll{
+        overflow: hidden;
+    }
 }
 p {
     color: $negro;

@@ -18,59 +18,6 @@
     padding: 2rem 0 2rem 0;
     position: relative;
     z-index: 1;
-    
-    .request-invite{
-        background: linear-gradient(90deg, $verdeLimon 0%, $celeste 100%);
-        border-radius: 25px;
-        padding: 1rem 3.5rem;
-        color: $blanco;
-        font-size: 1.4rem;
-        display: none;
-        transition: filter 150ms ease-in-out;
-        
-        @include tablet{
-            display: flex;
-        } 
-
-        &:hover{
-            filter: opacity(45%);
-        }
-    }
-}
-
-.menu-hamburguer{
-    @include tablet{
-        display: none;
-    } 
-    
-    span{
-        display: block;
-        height: 0.20rem;
-        width: 2.75rem;
-        background-color: $azulOscuro;
-        transform-origin: 5.5px 1.8px;
-        transition: transform 300ms ease-in-out;
-        
-        &:not(:last-of-type){
-            margin-bottom: 0.4rem;
-        }
-    }
-}
-
-.header{
-    &.menu-on{
-        span{
-            &:first-of-type{
-                transform: rotate(45deg);
-            }
-            &:nth-child(2){
-                opacity: 0;
-            }
-            &:last-of-type{
-                transform: rotate(-45deg);
-            }
-        }
-    }
 }
 
 .navegacion{

@@ -2,13 +2,9 @@
     // opacity: 0;
     visibility: hidden;
     position: fixed;
-    top: 5.7rem;
+    top: 5.9rem;
     right: 0;
     bottom: 0;
     left: 0;
     background-image: linear-gradient($azulOscuro 0%, transparent 100%);
-    
-    @include tablet{
-        top: 7.9rem;
-    }
 }

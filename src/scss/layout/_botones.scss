@@ -5,6 +5,7 @@
     color: $blanco;
     display: none;
     font-size: 1.4rem;
+    font-weight: $bold;
     transition: filter 150ms ease-in-out;
     
     @include tablet{

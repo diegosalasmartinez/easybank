@@ -1,5 +1,10 @@
 .portada{
     background-color: $blanco;
+    margin-bottom: 10rem;
+    
+    @include tablet{
+        margin-bottom: 0;
+    }
 }
 
 .grid-portada{
@@ -25,7 +30,6 @@
     }
 
     h1{
-        text-align: left;
         color: $azulOscuro;
         font-size: 4rem;
         line-height: 1.15;
@@ -35,6 +39,10 @@
         @include tablet{
             text-align: left;
             font-size: 5.5rem;
+        }
+
+        @include laptop{
+            max-width: 50rem;
         }
     }
     
@@ -48,6 +56,10 @@
 
         @include tablet{
             text-align: left;
+        }
+
+        @include laptop{
+            max-width: 45rem;
         }
     }
 
@@ -64,7 +76,6 @@
     background-position: 50% 0%;
     background-repeat: no-repeat;
     height: 40rem;
-    border: 1px solid red;
     
     @include tablet{
         background-image: url('/../build/img/bg-intro-desktop.svg');

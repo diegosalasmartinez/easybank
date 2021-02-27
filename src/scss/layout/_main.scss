@@ -1,0 +1,61 @@
+.main{
+    background-color: $grisClaro;
+
+    @include laptop{
+        margin-top: -2.75rem;
+    }
+
+    &__info{
+        h2{
+            padding-top: 6rem;
+            text-align: center;
+            color: $azulOscuro;
+            font-size: 3.2rem;
+            margin-bottom: 0;
+            line-height: 1.15;
+        
+            @include tablet{
+                padding-top: 8rem;
+                text-align: left;
+            }
+        }
+        
+        p{
+            color: $grisOscuro;
+            max-width: 70rem;
+            text-align: center;
+            line-height: 1.40;
+            margin-bottom: 7.5rem;
+
+            @include tablet{
+                text-align: left;
+            }
+        }
+    }
+
+    &__grid{
+        @include laptop{
+            @include grid(4,2rem);
+        }
+    }
+}
+
+.main__servicio{
+    .servicio-img{
+        display: flex;
+        justify-content: left;
+        height: 7.5rem;
+        // border: 1px solid red;
+
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    h3{
+        font-size: 2.5rem;
+        color: $azulOscuro;
+        text-align: left;
+    }
+}

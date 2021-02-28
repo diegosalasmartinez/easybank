@@ -1,5 +1,6 @@
 .request-invite{
-    background: linear-gradient(90deg, $verdeLimon 0%, $celeste 100%);
+    position: relative;
+    background-image: linear-gradient(90deg, $verdeLimon 0%, $celeste 100%);
     border-radius: 25px;
     padding: 0.8rem 3.5rem;
     color: $blanco;
@@ -11,8 +12,21 @@
     @include laptop{
         display: flex;
     } 
+    
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 25px;
+        background-color: rgba(255,255,255,0.35);
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
 
-    &:hover{
-        filter: opacity(45%);
+    &:hover::before{
+        opacity: 1;
     }
 }

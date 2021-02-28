@@ -1,0 +1,12 @@
+.attribution{
+    font-family: $fuente_principal;
+    text-align: center;
+
+    a{
+        color: $azulOscuro;
+        
+        &:hover{
+            color: $celeste;
+        }
+    }
+}

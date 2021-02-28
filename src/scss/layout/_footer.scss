@@ -5,20 +5,40 @@
 .barra-inferior{
     padding: 5rem 0 5rem 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    @include laptop{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .inferior-izq{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include laptop{
+        flex-direction: row;
+    }
 }
 
 .media{
-    margin-right: 13rem;
+    margin-right: 0;
+    
+    @include laptop{
+        margin-right: 13rem;
+    }
+
     
     .logo{
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-        margin-bottom: 5rem;
         padding-top: .75rem;
+        margin-bottom: 3rem;
+        
+        @include laptop{
+            margin-bottom: 5rem;
+        }
     }
     
     .social-medias{
@@ -26,27 +46,59 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 3rem;
         
-        a img{
-            height: 2rem;
-            width: auto;
+        @include laptop{
+            margin-bottom: 0;
         }
+
+        a{
+            svg{
+                height: 2rem;
+                width: auto;
+                
+                path{
+                    transition: fill 150ms ease-in-out;
+                }
+            }
+            &:hover svg path{
+                fill: $verdeLimon;
+            }
+        } 
     }
 }
 
 .contact{
     display: flex;
-
+    flex-direction: column;
+    margin-bottom: 3rem;
+    
+    @include laptop{
+        margin-bottom: 0;
+        flex-direction: row;
+    }
+    
     a{
         color: $blanco;            
         font-size: 1.7rem;
         text-align: center;
-    }
+        transition: all 150ms ease-in-out;
 
+        &:hover{
+            color: $verdeLimon;
+        }
+    }
+    
     &__first, &__second{
         display: flex;
         flex-direction: column;
-        margin-right: 10rem;
+        margin-right: 0;
+        align-items: center;
+        
+        @include laptop{
+            align-items: flex-start;
+            margin-right: 10rem;
+        }
 
         a{
             text-align: left;
@@ -58,14 +110,18 @@
 .inferior-der{
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
+    
+    @include laptop{
+        align-items: flex-end;
+    }
 
     a{
         display: inline-block;
     }
     
     p{
-        color: $blanco;            
+        color: $grisOscuro;            
         font-size: 1.7rem;
         margin-bottom: 0;
     }

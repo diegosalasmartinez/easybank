@@ -8,7 +8,7 @@
     font-weight: $regular;
     transition: filter 150ms ease-in-out;
     
-    @include tablet{
+    @include laptop{
         display: flex;
     } 
 

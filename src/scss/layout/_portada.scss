@@ -67,6 +67,11 @@
 
     a{
         display: inline-block;
+        margin-bottom: 5rem;
+
+        @include tablet{
+            margin-bottom: 0;
+        }
     }
 }
 

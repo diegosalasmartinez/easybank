@@ -1,0 +1,72 @@
+.footer{
+    background-color: $azulOscuro;
+}
+
+.barra-inferior{
+    padding: 5rem 0 5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inferior-izq{
+    display: flex;
+}
+
+.media{
+    margin-right: 13rem;
+    
+    .logo{
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+        margin-bottom: 5rem;
+        padding-top: .75rem;
+    }
+    
+    .social-medias{
+        width: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        a img{
+            height: 2rem;
+            width: auto;
+        }
+    }
+}
+
+.contact{
+    display: flex;
+
+    a{
+        color: $blanco;            
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    &__first, &__second{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10rem;
+
+        a{
+            text-align: left;
+            margin-bottom: .8rem;
+        }
+    }
+}
+
+.inferior-der{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    a{
+        display: inline-block;
+    }
+    
+    p{
+        color: $blanco;            
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+}

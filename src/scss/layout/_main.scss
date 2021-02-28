@@ -9,7 +9,7 @@
         h2{
             text-align: center;
             color: $azulOscuro;
-            font-size: 3.2rem;
+            font-size: 3.8rem;
             margin: 0 0 2.5rem 0;
             line-height: 1.15;
         
@@ -34,11 +34,11 @@
 
     &__grid{
         @include tablet{
-            @include grid(2,2rem);
+            @include grid(2,3rem);
         }
 
         @include laptop{
-            @include grid(4,2rem);
+            @include grid(4,3rem);
         }
     }
 }
@@ -48,8 +48,14 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 3.2rem;
+    transition: transform 150ms ease-in-out;
+
     &:last-of-type{
         margin-bottom: 0rem;
+    }
+
+    &:hover{
+        transform: scale(1.05);
     }
     
     @include tablet{

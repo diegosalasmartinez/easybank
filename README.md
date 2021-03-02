@@ -5,4 +5,4 @@
 ## Bienvenido! 👋
 Puedes ver el resultado de la página en el siguiente link: https://diegosalasmartinez-easybank.vercel.app/
 
-**Have fun building!** 🚀
+**Espero te haya agradado mi propuesta. Saludos!** 🚀
